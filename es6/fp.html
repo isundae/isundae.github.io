@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>404 Not Found | ISUNDAE&#39;s BLOG</title>
+  <title>ISUNDAE&#39;s BLOG</title>
   
   
 
@@ -111,7 +111,7 @@
 
       
     </cover>
-    <header class="l_header no_sidebar pure">
+    <header class="l_header pure">
   <div id="loading-bar-wrapper">
     <div id="loading-bar" class="pure"></div>
   </div>
@@ -193,6 +193,8 @@
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
 				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
         
 			</ul>
 		</div>
@@ -278,7 +280,7 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
-      <div class='l_main no_sidebar'>
+      <div class='l_main'>
   
 
   <article id="page" class="post white-box article-type-page" itemscope itemprop="blogPost">
@@ -290,9 +292,99 @@
     
     <div class="meta" id="header-meta">
       
+        
+  
+    <h1 class="title">
+      <a href="/es6/fp.html">
+        2020-02-11
+      </a>
+    </h1>
+  
+
+
+      
       <div class='new-meta-box'>
         
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://isundae.com" rel="nofollow">
+        
+          <i class="fas fa-user" aria-hidden="true"></i>
+        
+        <p>isundae</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2020-02-11</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item wordcount">
+      <a class='notlink'>
+        <i class="fas fa-keyboard" aria-hidden="true"></i>
+        <p>字数统计:</p>
+        <p>1.3k字</p>
+      </a>
+    </div>
+    <div class="new-meta-item readtime">
+      <a class='notlink'>
+        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+        <p>阅读时长≈</p>
+        <p>5分</p>
+      </a>
+    </div>
+  
+
+          
+        
+          
+            
+
+          
+        
       </div>
+      
+        <hr>
       
     </div>
   </section>
@@ -300,13 +392,67 @@
 
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
-        <h1 id="404-Not-Found"><a href="#404-Not-Found" class="headerlink" title="404 Not Found"></a><center><strong>404 Not Found</strong></center></h1><br>
+        <h1 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h1><p>JavaScript语言从一诞生，就具有函数式编程的烙印。它将函数作为一种独立的数据类型，与其他数据类型处于完全平等的地位。在JavaScript语言中，你可以采用面向对象编程，也可以采用函数式编程。有人甚至说，JavaScript是有史以来第一种被大规模采用的函数式编程语言。</p>
+<p>ES6的种种新增功能，使得函数式编程变得更方便、更强大。本章介绍ES6如何进行函数式编程。</p>
+<h2 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h2><p>柯里化（currying）指的是将一个多参数的函数拆分成一系列函数，每个拆分后的函数都只接受一个参数（unary）。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">add(<span class="number">1</span>, <span class="number">1</span>) <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
 
-<center>**很抱歉，您访问的页面不存在**</center>
-<center>可能是输入地址有误或该地址已被删除</center>
+<p>上面代码中，函数<code>add</code>接受两个参数<code>a</code>和<code>b</code>。</p>
+<p>柯里化就是将上面的函数拆分成两个函数，每个函数都只接受一个参数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span> (<span class="params">a</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 或者采用箭头函数写法</span></span><br><span class="line"><span class="keyword">const</span> add = <span class="function"><span class="params">x</span> =&gt;</span> <span class="function"><span class="params">y</span> =&gt;</span> x + y;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> f = add(<span class="number">1</span>);</span><br><span class="line">f(<span class="number">1</span>) <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
 
-<br>
-<br>
+<p>上面代码中，函数<code>add</code>只接受一个参数<code>a</code>，返回一个函数<code>f</code>。函数<code>f</code>也只接受一个参数<code>b</code>。</p>
+<h2 id="函数合成"><a href="#函数合成" class="headerlink" title="函数合成"></a>函数合成</h2><p>函数合成（function composition）指的是，将多个函数合成一个函数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> compose = <span class="function"><span class="params">f</span> =&gt;</span> <span class="function"><span class="params">g</span> =&gt;</span> <span class="function"><span class="params">x</span> =&gt;</span> f(g(x));</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> f = compose (<span class="function"><span class="params">x</span> =&gt;</span> x * <span class="number">4</span>) (<span class="function"><span class="params">x</span> =&gt;</span> x + <span class="number">3</span>);</span><br><span class="line">f(<span class="number">2</span>) <span class="comment">// 20</span></span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，<code>compose</code>就是一个函数合成器，用于将两个函数合成一个函数。</p>
+<p>可以发现，柯里化与函数合成有着密切的联系。前者用于将一个函数拆成多个函数，后者用于将多个函数合并成一个函数。</p>
+<h2 id="参数倒置"><a href="#参数倒置" class="headerlink" title="参数倒置"></a>参数倒置</h2><p>参数倒置（flip）指的是改变函数前两个参数的顺序。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> divide = <span class="function">(<span class="params">a, b</span>) =&gt;</span> a / b;</span><br><span class="line"><span class="keyword">var</span> flip = f.flip(divide);</span><br><span class="line"></span><br><span class="line">flip(<span class="number">10</span>, <span class="number">5</span>) <span class="comment">// 0.5</span></span><br><span class="line">flip(<span class="number">1</span>, <span class="number">10</span>) <span class="comment">// 10</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> three = <span class="function">(<span class="params">a, b, c</span>) =&gt;</span> [a, b, c];</span><br><span class="line"><span class="keyword">var</span> flip = f.flip(three);</span><br><span class="line">flip(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// =&gt; [2, 1, 3]</span></span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，如果按照正常的参数顺序，10除以5等于2。但是，参数倒置以后得到的新函数，结果就是5除以10，结果得到0.5。如果原函数有3个参数，则只颠倒前两个参数的位置。</p>
+<p>参数倒置的代码非常简单。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> f = &#123;&#125;;</span><br><span class="line">f.flip =</span><br><span class="line">  fn =&gt;</span><br><span class="line">    (a, b, ...args) =&gt; fn(b, a, ...args.reverse());</span><br></pre></td></tr></table></figure>
+
+<h2 id="执行边界"><a href="#执行边界" class="headerlink" title="执行边界"></a>执行边界</h2><p>执行边界（until）指的是函数执行到满足条件为止。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> condition = <span class="function"><span class="params">x</span> =&gt;</span> x &gt; <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> inc = <span class="function"><span class="params">x</span> =&gt;</span> x + <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> until = f.until(condition, inc);</span><br><span class="line"></span><br><span class="line">until(<span class="number">0</span>) <span class="comment">// 101</span></span><br><span class="line"></span><br><span class="line">condition = <span class="function"><span class="params">x</span> =&gt;</span> x === <span class="number">5</span>;</span><br><span class="line">until = f.until(condition, inc);</span><br><span class="line"></span><br><span class="line">until(<span class="number">3</span>) <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，第一段的条件是执行到<code>x</code>大于100为止，所以<code>x</code>初值为0时，会一直执行到101。第二段的条件是执行到等于5为止，所以<code>x</code>最后的值是5。</p>
+<p>执行边界的实现如下。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> f = &#123;&#125;;</span><br><span class="line">f.until = <span class="function">(<span class="params">condition, f</span>) =&gt;</span></span><br><span class="line">  (...args) =&gt; &#123;</span><br><span class="line">    <span class="keyword">var</span> r = f.apply(<span class="literal">null</span>, args);</span><br><span class="line">    <span class="keyword">return</span> condition(r) ? r : f.until(condition, f)(r);</span><br><span class="line">  &#125;;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码的关键就是，如果满足条件就返回结果，否则不断递归执行。</p>
+<h2 id="队列操作"><a href="#队列操作" class="headerlink" title="队列操作"></a>队列操作</h2><p>队列（list）操作包括以下几种。</p>
+<ul>
+<li><code>head</code>： 取出队列的第一个非空成员。</li>
+<li><code>last</code>： 取出有限队列的最后一个非空成员。</li>
+<li><code>tail</code>： 取出除了“队列头”以外的其他非空成员。</li>
+<li><code>init</code>： 取出除了“队列尾”以外的其他非空成员。</li>
+</ul>
+<p>下面是例子。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">f.head(<span class="number">5</span>, <span class="number">27</span>, <span class="number">3</span>, <span class="number">1</span>) <span class="comment">// 5</span></span><br><span class="line">f.last(<span class="number">5</span>, <span class="number">27</span>, <span class="number">3</span>, <span class="number">1</span>) <span class="comment">// 1</span></span><br><span class="line">f.tail(<span class="number">5</span>, <span class="number">27</span>, <span class="number">3</span>, <span class="number">1</span>) <span class="comment">// [27, 3, 1]</span></span><br><span class="line">f.init(<span class="number">5</span>, <span class="number">27</span>, <span class="number">3</span>, <span class="number">1</span>) <span class="comment">// [5, 27, 3]</span></span><br></pre></td></tr></table></figure>
+
+<p>这些方法的实现如下。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> f = &#123;&#125;;</span><br><span class="line">f.head = <span class="function">(<span class="params">...xs</span>) =&gt;</span> xs[<span class="number">0</span>];</span><br><span class="line">f.last = <span class="function">(<span class="params">...xs</span>) =&gt;</span> xs.slice(<span class="number">-1</span>);</span><br><span class="line">f.tail = <span class="function">(<span class="params">...xs</span>) =&gt;</span> <span class="built_in">Array</span>.prototype.slice.call(xs, <span class="number">1</span>);</span><br><span class="line">f.init = <span class="function">(<span class="params">...xs</span>) =&gt;</span> xs.slice(<span class="number">0</span>, <span class="number">-1</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="合并操作"><a href="#合并操作" class="headerlink" title="合并操作"></a>合并操作</h2><p>合并操作分为<code>concat</code>和<code>concatMap</code>两种。前者就是将多个数组合成一个，后者则是先处理一下参数，然后再将处理结果合成一个数组。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f.concat([<span class="number">5</span>], [<span class="number">27</span>], [<span class="number">3</span>]) <span class="comment">// [5, 27, 3]</span></span><br><span class="line">f.concatMap(<span class="function"><span class="params">x</span> =&gt;</span> <span class="string">'hi '</span> + x, <span class="number">1</span>, [[<span class="number">2</span>]], <span class="number">3</span>) <span class="comment">// ['hi 1', 'hi 2', 'hi 3']</span></span><br></pre></td></tr></table></figure>
+
+<p>这两种方法的实现代码如下。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> f = &#123;&#125;;</span><br><span class="line">f.concat =</span><br><span class="line">  (...xs) =&gt; xs.reduce(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a.concat(b));</span><br><span class="line">f.concatMap =</span><br><span class="line">  (f, ...xs) =&gt; f.concat(xs.map(f));</span><br></pre></td></tr></table></figure>
+
+<h2 id="配对操作"><a href="#配对操作" class="headerlink" title="配对操作"></a>配对操作</h2><p>配对操作分为<code>zip</code>和<code>zipWith</code>两种方法。<code>zip</code>操作将两个队列的成员，一一配对，合成一个新的队列。如果两个队列不等长，较长的那个队列多出来的成员，会被忽略。<code>zipWith</code>操作的第一个参数是一个函数，然后会将后面的队列成员一一配对，输入该函数，返回值就组成一个新的队列。</p>
+<p>下面是例子。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">let</span> b = [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"><span class="keyword">let</span> c = [<span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>];</span><br><span class="line"></span><br><span class="line">f.zip(a, b) <span class="comment">// [[0, 3], [1, 4], [2, 5]]</span></span><br><span class="line">f.zipWith(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a + b, a, b, c) <span class="comment">// [9, 12, 15]</span></span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，<code>zipWith</code>方法的第一个参数是一个求和函数，它将后面三个队列的成员，一一配对进行相加。</p>
+<p>这两个方法的实现如下。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> f = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">f.zip = <span class="function">(<span class="params">...xs</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> r = [];</span><br><span class="line">  <span class="keyword">let</span> nple = [];</span><br><span class="line">  <span class="keyword">let</span> length = <span class="built_in">Math</span>.min.apply(<span class="literal">null</span>, xs.map(<span class="function"><span class="params">x</span> =&gt;</span> x.length));</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">    xs.forEach(</span><br><span class="line">      x =&gt; nple.push(x[i])</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    r.push(nple);</span><br><span class="line">    nple = [];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> r;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">f.zipWith = <span class="function">(<span class="params">op, ...xs</span>) =&gt;</span></span><br><span class="line">  f.zip.apply(<span class="literal">null</span>, xs).map(</span><br><span class="line">    (x) =&gt; x.reduce(op)</span><br><span class="line">  );</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li>Mateo Gianolio, <a href="http://casualjavascript.com/?1" target="_blank" rel="noopener">Haskell in ES6: Part 1</a></li>
+</ul>
+
       </div>
       
       
@@ -863,11 +1009,9 @@
     verify: verify,
     guest_info: guest_info,
     
-      path: "/404.html",
-    
     appId: "Q9zgz9kv5uu1GJrIXtzip0gC-gzGzoHsz",
     appKey: "4c6JcqNKYbiL3asbUJovRPFY",
-    placeholder: "请留言告诉我您要访问哪个页面找不到了",
+    placeholder: "快来评论吧~",
     pageSize:'10',
     avatar:'mp',
     lang:'zh-cn',
