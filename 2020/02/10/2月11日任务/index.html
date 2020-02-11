@@ -395,12 +395,12 @@
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
         <h1 id="📑今日任务-停课不停学，同学们加油！"><a href="#📑今日任务-停课不停学，同学们加油！" class="headerlink" title="📑今日任务(停课不停学，同学们加油！)"></a>📑今日任务(停课不停学，同学们加油！)</h1>
-        <div id="aplayer-dBkBEGXz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-QlCysDdz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-dBkBEGXz"),
+            element: document.getElementById("aplayer-QlCysDdz"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -431,19 +431,25 @@
 <h3 id="🏆实例一"><a href="#🏆实例一" class="headerlink" title="🏆实例一"></a>🏆实例一</h3><blockquote>
 <p>局部变量制作计数器</p>
 </blockquote>
+<p><img src="http://img.isundae.cn/20200211235616.png" alt=""></p>
 <h4 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h4><p>在过程中定义一个静态变量，利用这个静态变量充当计数器，当计数器大于某数值时出现提示并退出过程。例如，本实例当输入数字超过3次时，将弹出提示对话框，提示程序只能运行三次。</p>
 <h4 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h4><ol>
-<li>新建一个标准工程。</li>
-<li>在工程中添加一个窗体，窗体的名称使用其默认名称，将<code>Caption</code>属性设置为<code>局部变量制作计数器</code>，<code>StartUpPositon</code>属性设置为<code>2-屏幕中心</code>。</li>
-<li>在窗体上添加一个<code>CommandButton</code>控件，使用其默认名称，将<code>Caption</code>属性设置为“计数”。</li>
-<li>程序的运行代码如下： <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Option Explicit</span><br><span class="line"></span><br><span class="line">Private Sub Command1_Click()</span><br><span class="line">    '计数</span><br><span class="line">    Static j As Integer</span><br><span class="line">    j = j + 1</span><br><span class="line">    If j &gt; 3 Then</span><br><span class="line">        MsgBox "只能运行3次"</span><br><span class="line">        Exit Sub</span><br><span class="line">    End If</span><br><span class="line">    </span><br><span class="line">    Dim num As Integer</span><br><span class="line">    num = Val(InputBox("请输入数字"))</span><br><span class="line">    Select Case num</span><br><span class="line">        Case 1</span><br><span class="line">            MsgBox "一"</span><br><span class="line">        Case 2</span><br><span class="line">            MsgBox "二"</span><br><span class="line">        Case 3</span><br><span class="line">            MsgBox "三"</span><br><span class="line">        Case Else</span><br><span class="line">            MsgBox "我只会数到三"</span><br><span class="line">    End Select</span><br><span class="line">    </span><br><span class="line">End Sub</span><br></pre></td></tr></table></figure>
+<li><p>新建一个标准工程。</p>
+</li>
+<li><p>在工程中添加一个窗体，窗体的名称使用其默认名称，将<code>Caption</code>属性设置为<code>局部变量制作计数器</code>，<code>StartUpPositon</code>属性设置为<code>2-屏幕中心</code>。</p>
+</li>
+<li><p>在窗体上添加一个<code>CommandButton</code>控件，使用其默认名称，将<code>Caption</code>属性设置为“计数”。</p>
+</li>
+<li><p>程序的运行代码如下：</p>
+ <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Option Explicit</span><br><span class="line"></span><br><span class="line">Private Sub Command1_Click()</span><br><span class="line">    '计数</span><br><span class="line">    Static j As Integer</span><br><span class="line">    j = j + 1</span><br><span class="line">    If j &gt; 3 Then</span><br><span class="line">        MsgBox "只能运行3次"</span><br><span class="line">        Exit Sub</span><br><span class="line">    End If</span><br><span class="line">    </span><br><span class="line">    Dim num As Integer</span><br><span class="line">    num = Val(InputBox("请输入数字"))</span><br><span class="line">    Select Case num</span><br><span class="line">        Case 1</span><br><span class="line">            MsgBox "一"</span><br><span class="line">        Case 2</span><br><span class="line">            MsgBox "二"</span><br><span class="line">        Case 3</span><br><span class="line">            MsgBox "三"</span><br><span class="line">        Case Else</span><br><span class="line">            MsgBox "我只会数到三"</span><br><span class="line">    End Select</span><br><span class="line">End Sub</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
-<h4 id="重点知识"><a href="#重点知识" class="headerlink" title="重点知识"></a>重点知识</h4><p>⭐使用<code>Static</code>语句声明的变量称为静态变量，当一个过程结束时，过程中所用到的静态变量的值会保留，下次再调用该过程时，变量的初值是上次调用结果时被保留的值。<br>⭐对于使用<code>Dim</code>语句声明的局部变量，随过程的调用而分配存储单元，并进行变量的初始化。一旦过程结束，变量的内容自动消失，占用的存储单元也被释放。因此，每次调用过程时，变量都将重新初始化。</p>
+<h4 id="重点知识"><a href="#重点知识" class="headerlink" title="重点知识"></a>重点知识</h4><p>⭐使用<code>Static</code>语句声明的变量称为静态变量，当一个过程结束时，过程中所用到的静态变量的值会保留，下次再调用该过程时，变量的初值是上次调用结果时被保留的值。<br>⭐对于使用<code>Dim</code>语句声明的局部动态变量，随过程的调用而分配存储单元，并进行变量的初始化。一旦过程结束，变量的内容自动消失，占用的存储单元也被释放。因此，每次调用过程时，变量都将重新初始化。</p>
 <h3 id="🏆实例二"><a href="#🏆实例二" class="headerlink" title="🏆实例二"></a>🏆实例二</h3><blockquote>
 <p>使用全局变量记录当前登陆用户</p>
 </blockquote>
+<p><img src="http://img.isundae.cn/20200211235713.png" alt=""></p>
 <h4 id="实例说明-1"><a href="#实例说明-1" class="headerlink" title="实例说明"></a>实例说明</h4><p>全局变量在Visual Basic应用程序中经常被使用。例如，在一个登陆程序当中可以用全局变量来临时存储当前登陆的用户名，实现判断登陆的用户名是否正确的功能。<br>本实例将实现通过使用全局变量记录当前登陆的用户，并在其他模块中访问这个变量的功能。在窗体中输入用户名和密码后，单击“确定”按钮，如果输入正确，显示“登陆成功”窗体，并显示“欢迎XXX用户登陆”的提示信息。</p>
 <h4 id="设计过程-1"><a href="#设计过程-1" class="headerlink" title="设计过程"></a>设计过程</h4><ol>
 <li>新建一个标准工程。</li>
@@ -480,7 +486,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-11T09:31:04+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-11T23:59:06+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>更新于 2020年2月11日</p>
