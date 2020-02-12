@@ -365,14 +365,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>725字</p>
+        <p>840字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>2分</p>
+        <p>3分</p>
       </a>
     </div>
   
@@ -395,12 +395,12 @@
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
         <h1 id="📑今日任务-停课不停学，同学们加油！"><a href="#📑今日任务-停课不停学，同学们加油！" class="headerlink" title="📑今日任务(停课不停学，同学们加油！)"></a>📑今日任务(停课不停学，同学们加油！)</h1>
-        <div id="aplayer-HpVRVxLZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-llYVHmpu" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-HpVRVxLZ"),
+            element: document.getElementById("aplayer-llYVHmpu"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -416,6 +416,9 @@
           window.aplayers.push(ap);
         </script>
 
+<blockquote>
+<p><a href="http://img.isundae.cn/Visual-Basic6.0.zip" target="_blank" rel="noopener">VB6.0 下载地址：http://img.isundae.cn/Visual Basic6.0.zip</a></p>
+</blockquote>
 <h2 id="一-日常签到📆"><a href="#一-日常签到📆" class="headerlink" title="一. 日常签到📆"></a>一. 日常签到📆</h2><blockquote>
 <p><a href="https://docs.qq.com/form/fill/DZXBkd3lNaUxzV2lS" target="_blank" rel="noopener">https://docs.qq.com/form/fill/DZXBkd3lNaUxzV2lS</a></p>
 </blockquote>
@@ -427,7 +430,7 @@
 <p>大了小了猜想</p>
 </blockquote>
 <p><img src="http://img.isundae.cn/20200212074203.png" alt=""></p>
-<h4 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h4><p>本实例实现了猜数字直到才对为止的功能。在判断TextBox控件中输入的数值大小时，需要先判断TextBox控件中输入的内容是否是数字，然后再判断大小。本实例主要运用了If语句的嵌套。</p>
+<h4 id="实例说明"><a href="#实例说明" class="headerlink" title="实例说明"></a>实例说明</h4><p>⭐本实例实现了猜数字直到才对为止的功能。在判断TextBox控件中输入的数值大小时，需要先判断TextBox控件中输入的内容是否是数字，然后再判断大小。本实例主要运用了If语句的嵌套。</p>
 <h4 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h4><ol>
 <li><p>新建一个标准工程</p>
 </li>
@@ -438,9 +441,12 @@
 <li><p>在窗体上添加两个<code>CommandButton</code>控件，将<code>Caption</code>属性分别设置为<code>生成</code>和<code>比较</code>，分别用于执行生成随机数命令和比较是否相等命令。</p>
 </li>
 <li><p>例如猜一个1000以内的随机数，代码如下：</p>
-<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="重点知识"><a href="#重点知识" class="headerlink" title="重点知识"></a>重点知识</h4><p>本实例主要是通过使用If语句的嵌套和Clng函数来实现的。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">Option Explicit</span><br><span class="line">Private r As Long</span><br><span class="line">Private Sub Command1_Click()</span><br><span class="line">    Randomize</span><br><span class="line">    r = CLng(Rnd * 1000)</span><br><span class="line">    MsgBox "生成了！"</span><br><span class="line">End Sub</span><br><span class="line"></span><br><span class="line">Private Sub Command2_Click()</span><br><span class="line">    End</span><br><span class="line">End Sub</span><br><span class="line"></span><br><span class="line">Private Sub Command3_Click()</span><br><span class="line">    Static j As Integer</span><br><span class="line">    j = j + 1</span><br><span class="line">    Label2.Caption = "这是您第" &amp; j &amp; "次猜测。"</span><br><span class="line">    '必须是数值：isNumeric("asdf") ==&gt; false    isNumeric(6) ==&gt;true</span><br><span class="line">    If Text1.Text &lt;&gt; "" And IsNumeric(Text1.Text) Then</span><br><span class="line">        If CLng(Text1.Text) &gt; r Then</span><br><span class="line">            MsgBox "大了"</span><br><span class="line">        ElseIf CLng(Text1.Text) &lt; r Then</span><br><span class="line">            MsgBox "小了"</span><br><span class="line">        Else</span><br><span class="line">            MsgBox "对了"</span><br><span class="line">        End If</span><br><span class="line">    Else</span><br><span class="line">        MsgBox "请重新输入！"</span><br><span class="line">    End If</span><br><span class="line">End Sub</span><br></pre></td></tr></table></figure>
+
 </li>
+</ol>
+<h4 id="重点知识"><a href="#重点知识" class="headerlink" title="重点知识"></a>重点知识</h4><p>本实例主要是通过使用If语句的嵌套和Clng函数来实现的。</p>
+<ol>
 <li><p>if语句的嵌套</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">If &lt;表达式&gt; Then</span><br><span class="line">     If &lt;表达式&gt; Then</span><br><span class="line">         &lt;语句组&gt;</span><br><span class="line">     Else</span><br><span class="line">         &lt;语句组&gt;</span><br><span class="line">     End If</span><br><span class="line"> Else</span><br><span class="line">     If &lt;表达式&gt; Then</span><br><span class="line">         &lt;语句组&gt;</span><br><span class="line">     Else</span><br><span class="line">         &lt;语句组&gt;</span><br><span class="line">     End If</span><br><span class="line"> End If</span><br></pre></td></tr></table></figure></li>
 <li><p>Clng函数<br>每个Clng函数都可以强制将一个表达式转换成长整型，句法如下</p>
@@ -452,7 +458,7 @@
 <p>0 到 100 的累加</p>
 </blockquote>
 <p><img src="http://img.isundae.cn/20200212072040.png" alt=""></p>
-<h4 id="实例说明-1"><a href="#实例说明-1" class="headerlink" title="实例说明"></a>实例说明</h4><p>本实例实现了计算0到100的累加功能，可以使用For…Next语句实现。</p>
+<h4 id="实例说明-1"><a href="#实例说明-1" class="headerlink" title="实例说明"></a>实例说明</h4><p>⭐本实例实现了计算0到100的累加功能，可以使用For…Next语句实现。</p>
 <h4 id="设计过程-1"><a href="#设计过程-1" class="headerlink" title="设计过程"></a>设计过程</h4><ol>
 <li>新建一个标准工程。</li>
 <li>在工程中添加一个窗体，窗体的名称使用其默认名称，将<code>Caption</code>属性设置为“累加”，<code>StartUpPosition</code>属性设置为“2-屏幕中心”。</li>
@@ -483,7 +489,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-12T07:46:16+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-12T12:01:15+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>更新于 2020年2月12日</p>
