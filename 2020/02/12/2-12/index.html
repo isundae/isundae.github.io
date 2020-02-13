@@ -344,14 +344,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>755字</p>
+        <p>911字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>2分</p>
+        <p>3分</p>
       </a>
     </div>
   
@@ -380,7 +380,7 @@
 <p><a href="http://img.isundae.cn/Visual-Basic6.0.zip" target="_blank" rel="noopener">VB6.0 下载地址：http://img.isundae.cn/Visual Basic6.0.zip</a></p>
 </blockquote>
 <div style="text-align: center;">
-    <div id="aplayer-MEQuhfbS" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-uzdVgexI" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="7424501290" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
     ></div></div>
 
@@ -428,13 +428,15 @@
 <li>新建一个标准工程。</li>
 <li>在工程中添加一个窗体，窗体的名称使用其默认名称，将<code>Caption</code>属性设置为“累加”，<code>StartUpPosition</code>属性设置为“2-屏幕中心”。</li>
 <li>在窗体上添加一个<code>CommandButton</code>控件，将<code>Caption</code>属性设置为“累加”。再添加一个<code>TextBox</code>控件，用于输入累加的终值。</li>
-<li>程序的主要代码如下： <figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<li>程序的主要代码如下： <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">Option Explicit</span><br><span class="line"></span><br><span class="line">Private Sub Command1_Click()</span><br><span class="line">    </span><br><span class="line">    Static sum As Long</span><br><span class="line">    Dim i As Long</span><br><span class="line">    Dim a As Long</span><br><span class="line">    Dim b As Long</span><br><span class="line">    Dim c As Long</span><br><span class="line">    'sum = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10</span><br><span class="line">    Cls</span><br><span class="line">    sum = 0</span><br><span class="line">    'sum = sum + 1</span><br><span class="line">    'sum = sum + 2</span><br><span class="line">    'sum = sum + 3</span><br><span class="line">    'sum = sum + 4</span><br><span class="line">    'sum = sum + 5</span><br><span class="line">    'sum = sum + 6</span><br><span class="line">    'sum = sum + 7</span><br><span class="line">    'sum = sum + 8</span><br><span class="line">    'sum = sum + 9</span><br><span class="line">    'sum = sum + 10</span><br><span class="line">    If IsNumeric(Text1) And IsNumeric(Text2) Then</span><br><span class="line">        a = Val(Text2)</span><br><span class="line">        b = Val(Text1)</span><br><span class="line">        c = 1</span><br><span class="line">        If a &gt; b Then c = -1</span><br><span class="line">        For i = a To b Step c</span><br><span class="line">            sum = sum + i</span><br><span class="line">        Next i</span><br><span class="line">        Print a &amp; "加到" &amp; b &amp; "的结果是：" &amp; sum</span><br><span class="line">    Else</span><br><span class="line">        Print "输入的不是数字"</span><br><span class="line">    End If</span><br><span class="line">End Sub</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
 <h4 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h4><blockquote>
 <p>实现任意一个数的阶乘。</p>
 </blockquote>
+  <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Option Explicit</span><br><span class="line"></span><br><span class="line">Private Sub Command1_Click()</span><br><span class="line">    Dim result As Long</span><br><span class="line">    Dim i As Integer</span><br><span class="line">    result = 1</span><br><span class="line">    For i = 10 To 1 Step -1</span><br><span class="line">        result = result * i</span><br><span class="line">    Next i</span><br><span class="line">    </span><br><span class="line">    Print result</span><br><span class="line">End Sub</span><br></pre></td></tr></table></figure>
+
 <h2 id="三-提交作业✅"><a href="#三-提交作业✅" class="headerlink" title="三. 提交作业✅"></a>三. 提交作业✅</h2><blockquote>
 <p>提交链接：<a href="https://docs.qq.com/form/fill/DZW1NeU1JaklVYXBo" target="_blank" rel="noopener">https://docs.qq.com/form/fill/DZW1NeU1JaklVYXBo</a></p>
 </blockquote>
@@ -454,7 +456,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-13T00:11:39+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-13T09:26:22+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>更新于 2020年2月13日</p>
