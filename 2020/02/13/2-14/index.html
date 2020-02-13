@@ -344,14 +344,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>1k字</p>
+        <p>2.1k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>3分</p>
+        <p>7分</p>
       </a>
     </div>
   
@@ -380,7 +380,7 @@
 <p><a href="http://img.isundae.cn/Visual-Basic6.0.zip" target="_blank" rel="noopener">VB6.0 下载地址：http://img.isundae.cn/Visual Basic6.0.zip</a></p>
 </blockquote>
 <div style="text-align: center;">
-    <div id="aplayer-cvEsTFnu" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-GaoOnhek" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="7424501290" data-server="tencent" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
     ></div></div>
 
@@ -535,6 +535,261 @@
 <h2 id="四-下课休息💨"><a href="#四-下课休息💨" class="headerlink" title="四. 下课休息💨"></a>四. 下课休息💨</h2><blockquote>
 <p>本节课相关问题课在下方留言👇👇👇</p>
 </blockquote>
+<h2 id="五-彩蛋🌹"><a href="#五-彩蛋🌹" class="headerlink" title="五. 彩蛋🌹"></a>五. 彩蛋🌹</h2><div>
+
+<H1><SUP><A NAME="vafctmsgbox"></A></SUP>MsgBox 函数</H1>
+
+<P>在对话框中显示消息，等待用户单击按钮，并返回一个 <B>Integer </B>告诉用户单击哪一个按钮。</P>
+
+<P class=label><B>语法</B></P>
+
+<P><B>MsgBox(<span class=empb><I>prompt</I></span></B>[, <span class=empb><B><I>buttons</I></B></span>] [, <span class=empb><B><I>title</I></B></span>] [, <span class=empb><B><I>helpfile</I></B></span>, <span class=empb><B><I>context</I></B></span>]<B>)</B></P>
+
+<P><B>MsgBox</B> 函数的语法具有以下几个<A HREF="JavaScript:hhobj_4.Click()">命名参数</A>：</P>
+
+<TABLE border=1 cellpadding=5 cols=2 frame=below rules=rows>
+
+<TR VALIGN="top">
+<TD class=label width=15%><B>部分</B></TD>
+<TD class=label width=85%><B>描述</B></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=15%><span class=empb><B><I>Prompt</I></B></span></TD>
+<TD width=85%>必需的。<A HREF="JavaScript:hhobj_5.Click()">字符串表达式</A>，作为显示在对话框中的消息。<span class=empb><B><I>prompt</I></B></span> 的最大长度大约为 1024 个字符，由所用字符的宽度决定。如果 <span class=empb><B><I>prompt </I></B></span>的内容超过一行，则可以在每一行之间用回车符<font face="Verdana"> (<B>Chr(</B>13<B>)</B>)、换行符 (<font face="Verdana"><B>Chr(</B>10<B>)</B>) 或是回车与换行符的组合 <font face="Verdana">(<B>Chr(</B>13<font face="Verdana"><B>)</B> &amp; <B>Chr(</B>10<B>)</B>) 将各行分隔开来。</FONT></FONT></FONT></FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=15%><span class=empb><B><I>Buttons</I></B></span></TD>
+<TD width=85%>可选的。<A HREF="JavaScript:hhobj_6.Click()">数值表达式</A>是值的总和，指定显示按钮的数目及形式，使用的图标样式，缺省按钮是什么以及消息框的强制回应等。如果省略，则<font face="Verdana"> <span class=empb><B><I>buttons</I></B></span> 的缺省值为 0。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=15%><span class=empb><B><I>Title</I></B></span></TD>
+<TD width=85%>可选的。在对话框标题栏中显示的字符串表达式。如果省略 <span class=empb><B><I>title</I></B></span>，则将应用程序名放在标题栏中。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=15%><span class=empb><B><I>Helpfile</I></B></span></TD>
+<TD width=85%>可选的。字符串表达式，识别用来向对话框提供上下文相关帮助的帮助文件。如果提供了 <span class=empb><B><I>helpfile</I></B></span>，则也必须提供 <span class=empb><B><I>context</I></B></span>。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=15%><span class=empb><B><I>Context</I></B></span></TD>
+<TD width=85%>可选的。数值表达式，由帮助文件的作者指定给适当的帮助主题的帮助上下文编号。如果提供了 <span class=empb><B><I>context</I></B></span>，则也必须提供 <span class=empb><B><I>helpfile</I></B></span>。</TD>
+</TR>
+</TABLE><BR>
+
+<P class=label><B>设置值</B></P>
+
+<P><span class=empb><B><I>buttons</I></B></span> <A HREF="JavaScript:hhobj_7.Click()">参数</A>有下列设置值：</P>
+
+<TABLE border=1 cellpadding=5 cols=3 frame=below rules=rows>
+
+<TR VALIGN="top">
+<TD class=label width=31%><B>常数</B></TD>
+<TD class=label width=12%><B>值</B></TD>
+<TD class=label width=57%><B>描述</B></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>vbOKOnly</B></TD>
+<TD width=12%>0</TD>
+<TD width=57%>只显示<font face="Verdana"> <B>OK</B> 按钮。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>VbOKCancel</B></TD>
+<TD width=12%>1</TD>
+<TD width=57%>显示<font face="Verdana"> <B>OK</B> 及 <B>Cancel</B> 按钮。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>VbAbortRetryIgnore</B></TD>
+<TD width=12%>2</TD>
+<TD width=57%>显示 <B>Abort</B>、<B>Retry</B> 及<font face="Verdana"> <B>Ignore</B> 按钮。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>VbYesNoCancel</B></TD>
+<TD width=12%>3</TD>
+<TD width=57%>显示 <B>Yes</B>、<B>No</B> 及<font face="Verdana"> <B>Cancel</B> 按钮。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>VbYesNo</B></TD>
+<TD width=12%>4</TD>
+<TD width=57%>显示<font face="Verdana"> <B>Yes</B> 及 <B>No</B> 按钮。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>VbRetryCancel</B></TD>
+<TD width=12%>5</TD>
+<TD width=57%>显示<font face="Verdana"> <B>Retry</B> 及 <B>Cancel</B> 按钮。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>VbCritical</B></TD>
+<TD width=12%>16</TD>
+<TD width=57%>显示<B> Critical Message</B> 图标。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>VbQuestion</B></TD>
+<TD width=12%>32</TD>
+<TD width=57%>显示<font face="Verdana"> <B>Warning Query</B> 图标。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>VbExclamation</B></TD>
+<TD width=12%>48</TD>
+<TD width=57%>显示<font face="Verdana"> <B>Warning Message</B> 图标。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>VbInformation</B></TD>
+<TD width=12%>64</TD>
+<TD width=57%>显示<font face="Verdana"> <B>Information Message</B> 图标。</FONT></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>vbDefaultButton1</B></TD>
+<TD width=12%>0</TD>
+<TD width=57%>第一个按钮是缺省值。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>vbDefaultButton2</B></TD>
+<TD width=12%>256</TD>
+<TD width=57%>第二个按钮是缺省值。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>vbDefaultButton3</B></TD>
+<TD width=12%>512</TD>
+<TD width=57%>第三个按钮是缺省值。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=31%><B>vbDefaultButton4</B></TD>
+<TD width=12%>768</TD>
+<TD width=57%>第四个按钮是缺省值。</TD>
+</TR>
+</TABLE><BR>
+
+<TABLE border=1 cellpadding=5 cols=6 frame=below rules=rows>
+
+<TR VALIGN="top">
+<TD width=28%><B>vbApplicationModal</B></TD>
+<TD width=9%>0</TD>
+<TD colspan=3 width=50%>应用程序强制返回；应用程序一直被挂起，直到用户对消息框作出响应才继续工作。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=3 width=40%><B>vbSystemModal</B></TD>
+<TD width=10%>4096</TD>
+<TD colspan=2 width=50%>系统强制返回；全部应用程序都被挂起，直到用户对消息框作出响应才继续工作。</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=3 width=40%><B>vbMsgBoxHelpButton</B></TD>
+<TD width=10%>16384</TD>
+<TD colspan=2 width=50%>将Help按钮添加到消息框</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=3 width=40%><B>VbMsgBoxSetForeground</B></TD>
+<TD width=10%>65536</TD>
+<TD colspan=2 width=50%>指定消息框窗口作为前景窗口</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=3 width=40%><B>vbMsgBoxRight</B></TD>
+<TD width=10%>524288</TD>
+<TD colspan=2 width=50%>文本为右对齐</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=3 width=40%><B>vbMsgBoxRtlReading</B></TD>
+<TD width=10%>1048576</TD>
+<TD colspan=2 width=50%>指定文本应为在希伯来和阿拉伯语系统中的从右到左显示</TD>
+</TR>
+</TABLE><BR>
+
+<P>第一组值 (0–5) 描述了对话框中显示的按钮的类型与数目；第二组值 (16, 32, 48, 64) 描述了图标的样式；第三组值 (0, 256, 512) 说明哪一个按钮是缺省值；而第四组值 (0, 4096) 则决定消息框的强制返回性。将这些数字相加以生成 <span class=empb><B><I>buttons </I></B></span>参数值的时候，只能由每组值取用一个数字。</P>
+
+<P class=indent><B><B>注意</B></B>   这些<A HREF="JavaScript:hhobj_8.Click()">常数</A>都是 Visual Basic for Applications (VBA) 指定的。结果，可以在程序代码中到处使用这些常数名称，而不必使用实际数值。</P>
+
+<P class=label><B>返回值</B></P>
+
+<TABLE border=1 cellpadding=5 cols=5 frame=below rules=rows>
+
+<TR VALIGN="top">
+<TD class=label colspan=2 width=16%><B>常数</B></TD>
+<TD class=label colspan=2 width=12%><B>值</B></TD>
+<TD class=label width=72%><B>描述</B></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=15%><B>vbOK</B></TD>
+<TD colspan=2 width=11%>1</TD>
+<TD colspan=2 width=74%><B>OK</B></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=2 width=16%><B>vbCancel</B></TD>
+<TD colspan=2 width=12%>2</TD>
+<TD width=72%><B>Cancel</B></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=2 width=16%><B>vbAbort</B></TD>
+<TD colspan=2 width=12%>3</TD>
+<TD width=72%><B>Abort</B></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=2 width=16%><B>vbRetry</B></TD>
+<TD colspan=2 width=12%>4</TD>
+<TD width=72%><B>Retry</B></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=2 width=16%><B>vbIgnore</B></TD>
+<TD colspan=2 width=12%>5</TD>
+<TD width=72%><B>Ignore</B></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=2 width=16%><B>vbYes</B></TD>
+<TD colspan=2 width=12%>6</TD>
+<TD width=72%><B>Yes</B></TD>
+</TR>
+
+<TR VALIGN="top">
+<TD colspan=2 width=16%><B>vbNo</B></TD>
+<TD colspan=2 width=12%>7</TD>
+<TD width=72%><B>No</B></TD>
+</TR>
+</TABLE><BR>
+
+<P class=label><B>说明</B></P>
+
+<P>在提供了<font face="Verdana"> <span class=empb><B><I>helpfile</I></B></span> 与 <span class=empb><B><I>context </I></B></span>的时候，用户可以按 F1 来查看与 <B>context </B>相应的帮助主题。像 Microsoft Excel 这样一些<A HREF="JavaScript:hhobj_9.Click()">主机应用程序</A>也会在对话框中自动添加一个 <B>Help</B> 按钮。</FONT></P>
+
+<P>如果对话框显示<font face="Verdana"> <B>Cancel</B> 按钮，则按下 ESC 键与单击 <B>Cancel</B> 按钮的效果相同。如果对话框中有 <B>Help</B> 按钮，则对话框中提供有上下文相关的帮助。但是，直到其它按钮中有一个被单击之前，都不会返回任何值。</FONT></P>
+
+<P class=indent><B><B>注意</B></B>   如果还要指定第一个命名参数以外的参数，则必须在<A HREF="JavaScript:hhobj_10.Click()">表达式</A>中使用 <B>MsgBox</B>。为了省略某些位置<A HREF="JavaScript:hhobj_11.Click()">参数</A>，必须加入相应的逗号分界符。</P>
+
+
+</div>
+
+<h3 id="🏆实例"><a href="#🏆实例" class="headerlink" title="🏆实例"></a>🏆实例</h3><blockquote>
+<p>表白小程序</p>
+</blockquote>
+<p><img src="http://img.isundae.cn/KPlHqBiEr3.gif" alt=""></p>
+<p>实现代码：</p>
+<pre><code class="VB"></code></pre>
 
       </div>
       
@@ -547,10 +802,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-13T12:02:27+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-14T07:42:09+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2020年2月13日</p>
+    <p>更新于 2020年2月14日</p>
   </a>
 </div>
 
@@ -837,7 +1092,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-日常签到📆"><span class="toc-text">一. 日常签到📆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-课程内容🌍"><span class="toc-text">二. 课程内容🌍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#新知识点-gt-Timer-控件"><span class="toc-text">新知识点 &#x3D;&#x3D;&gt; Timer 控件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#⏰概念🎁"><span class="toc-text">⏰概念🎁</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#⏰在窗体上放置-Timer-控件-🎈"><span class="toc-text">⏰在窗体上放置 Timer 控件 🎈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#⏰初始化-Timer-控件-⌚"><span class="toc-text">⏰初始化 Timer 控件 ⌚</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#🏆实例一"><span class="toc-text">🏆实例一</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#实例说明"><span class="toc-text">实例说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设计过程"><span class="toc-text">设计过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重点知识"><span class="toc-text">重点知识</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#🏆实例二"><span class="toc-text">🏆实例二</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#实例说明-1"><span class="toc-text">实例说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设计过程-1"><span class="toc-text">设计过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重点知识-1"><span class="toc-text">重点知识</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-提交作业✅"><span class="toc-text">三. 提交作业✅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-下课休息💨"><span class="toc-text">四. 下课休息💨</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-日常签到📆"><span class="toc-text">一. 日常签到📆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-课程内容🌍"><span class="toc-text">二. 课程内容🌍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#新知识点-gt-Timer-控件"><span class="toc-text">新知识点 &#x3D;&#x3D;&gt; Timer 控件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#⏰概念🎁"><span class="toc-text">⏰概念🎁</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#⏰在窗体上放置-Timer-控件-🎈"><span class="toc-text">⏰在窗体上放置 Timer 控件 🎈</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#⏰初始化-Timer-控件-⌚"><span class="toc-text">⏰初始化 Timer 控件 ⌚</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#🏆实例一"><span class="toc-text">🏆实例一</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#实例说明"><span class="toc-text">实例说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设计过程"><span class="toc-text">设计过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重点知识"><span class="toc-text">重点知识</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#🏆实例二"><span class="toc-text">🏆实例二</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#实例说明-1"><span class="toc-text">实例说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设计过程-1"><span class="toc-text">设计过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重点知识-1"><span class="toc-text">重点知识</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-提交作业✅"><span class="toc-text">三. 提交作业✅</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-下课休息💨"><span class="toc-text">四. 下课休息💨</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-彩蛋🌹"><span class="toc-text">五. 彩蛋🌹</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#null"><span class="toc-text">MsgBox 函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#🏆实例"><span class="toc-text">🏆实例</span></a></li></ol></li></ol>
     </div>
   </section>
 
